@@ -69,7 +69,7 @@ index 3310828edcabd2c24e3200dcb89d4e8ebd82cf16..5dbb9dc3956bc5a431fc1ec9099f79d4
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Purpur"; // Paper // Pufferfish // Purpur
-+    private final String serverName = "superJk92-Custom"; // Paper // Pufferfish // Purpur // Tentacles
++    private final String serverName = "superJk92-Custom"; // Paper // Pufferfish // Purpur // Tentacles // superJK92
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
