@@ -1,4 +1,4 @@
-name: Build
+name: Apply Patches and Build
 on: [ push, pull_request ]
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       - name: Apply patches
         run: ./gradlew applyPatches --stacktrace
       - name: Build
-        run: ./gradlew build --stacktrace
+        run: ./gradlew createReobfBundlerJar --stacktrace
       - name: Upload Purpur JAR
         uses: actions/upload-artifact@v4
         with:
