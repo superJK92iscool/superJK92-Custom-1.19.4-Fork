@@ -16,3 +16,8 @@ jobs:
         run: ./gradlew applyPatches --stacktrace
       - name: Build
         run: ./gradlew build --stacktrace
+      - name: Upload Purpur JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: purpur-custom-server
+          path: build/libs/*.jar
